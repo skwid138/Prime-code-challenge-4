@@ -3,11 +3,11 @@ var express = require('express');
 var app = express();
 var path = require('path');
 
-var rho = require('./routes/rho');
+var upsilon = require('./routes/upsilon');
 
 app.use(express.static('public'));
 
-app.use('/rho', rho);
+app.use('/upsilon', upsilon);
 
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'public/views/index.html'));
