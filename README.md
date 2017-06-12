@@ -13,6 +13,8 @@ It will look like [this mockup](https://ninjastorage.blob.core.windows.net/html/
 
 # Running the tests
 
+**NOTE:** You may need to install Java first: `brew cask install java`
+
 1. Open a new tab in your Terminal (command + T)
 2. Start the server in one tab with `npm start`.
 3. Run the tests in another tab with `npm test`.
