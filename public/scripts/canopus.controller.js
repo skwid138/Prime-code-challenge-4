@@ -1,3 +1,6 @@
+/** ---- DO NOT MODIFY ---- **/
+var app = angular.module('canopusApp', []);
+
 var canopus = [
   'Alex',
   'Alicia',
