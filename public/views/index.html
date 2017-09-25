@@ -14,9 +14,9 @@
       <header class="row">
         <h1 class="text-center">Canopus Code Challenge</h1>
       </header>
-      <div class="row text-center">
-        <!-- On button click, display list of omega students -->
-        <button class="btn btn-primary btn-lg">Display Students</button>
+      <div ng-controller="CanopusController as CC" class="row text-center">
+        <!-- On button click, display list of canopus students -->
+        <button ng-click="CC.getStudents()" class="btn btn-primary btn-lg">Display Students</button>
       </div>
       <div class="row">
         <!-- List of Canopus students -->

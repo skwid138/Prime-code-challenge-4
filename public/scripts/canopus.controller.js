@@ -28,6 +28,13 @@ var canopus = [
 /** ---- CONTROLLER HERE ---- **/
 app.controller('CanopusController', CanopusController);
 
-function CanopusController() {
+function CanopusController($http) {
   // @TODO: Write your controller code in here
+  console.log('in CanopusController');
+  var vm = this;
+
+  vm.getStudents = function( ) {
+    console.log('in getStudents');
+    
+  }; // end getStudents
 }
