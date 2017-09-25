@@ -10,16 +10,17 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto|Satisfy" rel="stylesheet">
   </head>
   <body ng-app="canopusApp">
-    <div class="container">
+    <div class="container" ng-controller="CanopusController as CC">
       <header class="row">
         <h1 class="text-center">Canopus Code Challenge</h1>
       </header>
-      <div ng-controller="CanopusController as CC" class="row text-center">
+      <div class="row text-center">
         <!-- On button click, display list of canopus students -->
         <button ng-click="CC.listStudents()" class="btn btn-primary btn-lg">Display Students</button>
       </div>
       <div class="row">
         <!-- List of Canopus students -->
+        <li ng-repeat="student in CC.students">{{student}}</li>
       </div>
       <footer>
         <p class="text-center">Comparison is the thief of joy</p>
