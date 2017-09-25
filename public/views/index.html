@@ -20,7 +20,9 @@
       </div>
       <div class="row">
         <!-- List of Canopus students -->
-        <li ng-repeat="student in CC.students">{{student}}</li>
+        <ol>
+          <li class="text-center" ng-repeat="student in CC.students">{{student}}</li>
+        </ol>
       </div>
       <footer>
         <p class="text-center">Comparison is the thief of joy</p>
